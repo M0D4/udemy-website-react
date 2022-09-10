@@ -1,0 +1,140 @@
+.nav-bar-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 0 10px;
+    background-color: white;
+    font-family: udemy sans, -apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+    box-shadow: 0 0 10px 0 #ddd;
+}
+
+.small-screen {
+    display: none;
+}
+
+.logo {
+    width: 91px;
+    height: 34px;
+}
+
+.udemy-logo {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+}
+
+.categories {
+    text-decoration: none;
+    border: none;
+    background-color: white;
+    color: #1c1d1f;
+    font-size: 14px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.hover-change {
+    color: #1c1d1f;
+}
+
+.hover-change:hover {
+    color: #5624d0;
+}
+
+.search-bar {
+    display: flex;
+    flex: 1;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+
+.search-form {
+    display: flex;
+    border: 2px black;
+    padding: 10px;
+    width: 100%;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    flex: 1;
+    margin-left: 10px;
+    box-sizing: content-box;
+}
+
+.search-icon {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+.teach,
+.udemy-business {
+    font-family: udemy sans, sf pro text, -apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+    font-weight: 400;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.shopping-cart {
+    padding: 10px;
+}
+
+.buttons {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-end;
+}
+
+.medium-button {
+    padding: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: white;
+}
+
+.login-button:hover,
+.lang:hover {
+    background-color: #ddd;
+}
+
+.signup-button {
+    background-color: #1c1d1f;
+}
+
+.signup-button:hover {
+    background-color: black;
+}
+
+
+.login-text {
+    color: #1c1d1f;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.signup-text {
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.lang {
+    background-color: white;
+}
+
+.fa-globe,
+.fa {
+    font-size: 23px !important;
+}
+
+.nav-bar-container a {
+    text-decoration: none;
+    color: black;
+}

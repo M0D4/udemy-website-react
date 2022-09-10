@@ -1,13 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .courses-section {
     display: flex;
     position: relative;
     flex-wrap: wrap;
     height: 100%;
-    width: 95%;
+    width: 90%;
     background-color: white;
     justify-content: flex-start;
     flex-direction: column;
     border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 32px;
 }
 
 .btn-explore {
