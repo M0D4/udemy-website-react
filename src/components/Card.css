@@ -1,0 +1,21 @@
+.rating {
+    color: #b4690e;
+}
+
+.checked {
+    color: #e59819;
+}
+
+.light-color {
+    color: #6a6f73;
+}
+
+.bestSeller {
+    background-color: #eceb98;
+    color: #3d3c0a;
+    border-radius: 0%;
+}
+
+.course-card {
+    width: 30%;
+}
