@@ -42,18 +42,11 @@
     font-size: 20px;
 }
 
-.courses-section-header,
-.courses-section-header-description {
-    margin-left: 75px;
-    margin-right: 75px;
-}
 
 .categories-tab {
     display: flex;
     max-width: 100%;
     flex-wrap: wrap;
-    margin-left: 75px;
-    margin-right: 75px;
 }
 
 .categories-tab button {
@@ -64,4 +57,14 @@
     font-weight: bold;
     color: #6a6f73;
     padding: 8px 4px;
+}
+
+
+.active-tab {
+    color: black !important;
+}
+
+.pre-courses-section {
+    margin-left: 75px;
+    margin-right: 75px;
 }
