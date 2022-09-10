@@ -31,3 +31,37 @@
     background-color: #ddd;
     color: black;
 }
+
+
+.courses-section-header h1 {
+    font-size: 35px;
+}
+
+.courses-section-header-description h3 {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.courses-section-header,
+.courses-section-header-description {
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.categories-tab {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+
+.categories-tab button {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    font-weight: bold;
+    color: #6a6f73;
+    padding: 8px 4px;
+}
