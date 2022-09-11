@@ -4,7 +4,7 @@ import './NavBar.css';
 
 function NavBar(props) {
     const shoppingCartStyle = {
-        fontSize: 36
+        fontSize: 29
     }
     return (
         <>
@@ -14,7 +14,7 @@ function NavBar(props) {
                 </div>
                 <div className="udemy-logo">
                     <a href="udemy.com">
-                        <img className="logo" src={"https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"} alt="Udemy" />
+                        <img className="logo" src={"https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"} alt="Udemy logo" />
                     </a>
                 </div>
                 <nav className="big-screen">
@@ -22,8 +22,8 @@ function NavBar(props) {
                 </nav>
                 <div className="search-bar big-screen">
                     <form action="/courses/search" className="search-form">
-                        <button className="search-icon"><i className="fa fa-search fa-2x"></i></button>
-                        <input className="search-text" type="text" name="search" placeholder="Search for anything" />
+                        <button className="search-icon"><i className="fa fa-search"></i></button>
+                        <input className="search-text ml-4" type="text" name="search" placeholder="Search for anything" />
                     </form>
                 </div>
                 <div className="udemy-business big-screen">
@@ -38,8 +38,8 @@ function NavBar(props) {
                     </a>
                 </div>
                 <div className="buttons big-screen">
-                    <button className="login-button medium-button"><span className="login-text">Log in</span></button>
-                    <button className="signup-button medium-button"><span className="signup-text">Sign up</span></button>
+                    <button className="login-button medium-button"><span className="login-text font-weight-bold">Log in</span></button>
+                    <button className="signup-button medium-button"><span className="signup-text font-weight-bold">Sign up</span></button>
                     <button className="lang medium-button"><i className="fa fa-globe"></i></button>
                 </div>
             </nav>

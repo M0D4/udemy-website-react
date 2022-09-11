@@ -2,8 +2,8 @@
     display: flex;
     align-items: center;
     width: 100%;
-    height: 80px;
-    padding: 0 10px;
+    height: 70px;
+    padding: 0 24px;
     background-color: white;
     font-family: udemy sans, -apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
     box-shadow: 0 0 10px 0 #ddd;
@@ -22,6 +22,7 @@
     /* display: flex; */
     justify-content: center;
     align-items: center;
+    margin-right: 7px;
 }
 
 .categories {
@@ -78,6 +79,10 @@
     padding: 10px;
 }
 
+.udemy-business {
+    margin-left: 10px;
+}
+
 .shopping-cart {
     padding: 10px;
 }
@@ -90,9 +95,14 @@
 }
 
 .medium-button {
-    padding: 10px;
+    padding: 0px 12px;
     margin-left: 10px;
     cursor: pointer;
+    width: 54px;
+    height: 38px;
+    width: fit-content;
+    border: 1px solid black;
+    /* height: 2rem; */
 }
 
 .login-button {
@@ -116,22 +126,24 @@
 .login-text {
     color: #1c1d1f;
     font-weight: 400;
-    font-size: 20px;
 }
 
 .signup-text {
     color: white;
     font-weight: 400;
-    font-size: 20px;
+    /* font-size: 20px; */
 }
 
 .lang {
     background-color: white;
 }
 
-.fa-globe,
-.fa {
-    font-size: 23px !important;
+.fa-globe {
+    font-size: 21px !important;
+}
+
+.fa-search {
+    margin-left: 5px;
 }
 
 .nav-bar-container a {

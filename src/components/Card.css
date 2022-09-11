@@ -6,6 +6,12 @@
     color: #e59819;
 }
 
+.notChecked {
+    color: white;
+    text-shadow: #e59819 0px 0px 1px, #e59819 0px 0px 1px, #e59819 0px 0px 1px,
+        #e59819 0px 0px 1px, #e59819 0px 0px 1px, #e59819 0px 0px 1px;
+}
+
 .light-color {
     color: #6a6f73;
 }
@@ -17,5 +23,32 @@
 }
 
 .course-card {
-    width: 24%;
+    width: 19%;
+}
+
+.card {
+    border: none;
+}
+
+.star {
+    font-size: 15px !important;
+}
+
+.card-title,
+.card-text,
+.price {
+    margin-bottom: 1px;
+}
+
+/* .card-title {
+    width: 100%;
+    overflow: hidden;
+} */
+
+.price {
+    margin-top: 1px !important;
+}
+
+.card-body {
+    padding: 0px;
 }

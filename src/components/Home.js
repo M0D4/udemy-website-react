@@ -31,7 +31,8 @@ const initialCards = [
     { id: 1, course: { ...course } },
     { id: 2, course: { ...course } },
     { id: 3, course: { ...course } },
-    { id: 4, course: { ...course2 } }
+    { id: 4, course: { ...course2 } },
+    { id: 5, course: { ...course2 } }
 ];
 
 const coursesSectionTitle = "Expand your career opportunities with Python";
@@ -68,6 +69,6 @@ export default Home;
 const handleFilter = (searchText) => {
     var newCards = { ...cards };
     newCards = newCards.filter((card) => /*card.category.trim().toLowerCase() === category.trim().toLowerCase()
-        && */card.title.toLowerCase().indexOf(searchText.trim().toLowerCase()) != -1);
+        && */card.title.toLowerCase().indexOf(searchText.trim().toLowerCase()) !== -1);
     setCards(newCards);
 }
