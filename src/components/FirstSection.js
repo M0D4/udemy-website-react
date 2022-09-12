@@ -11,7 +11,7 @@ function FirstSection() {
 
                 <div className="text-card">
                     <h1>Unlock the power of your people</h1>
-                    <p>Udemy Business is trusted by 10.5K+ companies around the world. Find out what we can do for yours.</p>
+                    <p>Udemy Business is trusted by 10.5K+ companies around the world. <a className='find-out-link' href='#'>Find out what we can do for yours</a>.</p>
                 </div>
             </section>
         </>

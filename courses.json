@@ -1,0 +1,183 @@
+{
+    "courses": [
+        {
+            "python": {
+                "title": "Expand your career opportunities with Python",
+                "description": "Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to...",
+                "courses": [
+                    {
+                        "id": 1,
+                        "title": "Python from zero to hero",
+                        "description": "Learn A-Z everything about Python, from the basics, to advanced topics like Python GUI, Python Data Analysis, and more!",
+                        "Last Updated": "9/2015",
+                        "language": "English",
+                        "Closed Caption": "English",
+                        "instructor": "maximlian",
+                        "image": "https://img-b.udemycdn.com/course/240x135/394676_ce3d_5.jpg",
+                        "price": "269.99",
+                        "category": "python",
+                        "stars": 4.4,
+                        "bestSeller": true,
+                        "students": 18137,
+                        "numberOfRatings": 15000,
+                        "what you will learn": [
+                            "Have an intermediate skill level of Python programming.",
+                            "Use the Jupyter Notebook Environment.",
+                            "Use the numpy library to create and manipulate arrays.",
+                            "Use the pandas module with Python to create and structure data.",
+                            "Learn how to work with various data formats within python, including: JSON,HTML, and MS Excel Worksheets.",
+                            "Create data visualizations using matplotlib and the seaborn modules with python.",
+                            "Have a portfolio of various data analysis projects."
+                        ]
+                    },
+                    {
+                        "id": 2,
+                        "title": "Learning Python for Data Analysis and Visualization",
+                        "description": "Learn A-Z everything about Python, from the basics, to advanced topics like Python GUI, Python Data Analysis, and more!",
+                        "Last Updated": "9/2015",
+                        "language": "English",
+                        "Closed Caption": "English",
+                        "instructor": "Jose Portilla",
+                        "image": "https://img-b.udemycdn.com/course/240x135/396876_cc92_7.jpg",
+                        "price": "319.99",
+                        "category": "python",
+                        "stars": 4.4,
+                        "bestSeller": true,
+                        "students": 19000,
+                        "numberOfRatings": 15000
+                    },
+                    {
+                        "id": 9,
+                        "title": "Python from zero to hero 2",
+                        "description": "Learn A-Z everything about Python, from the basics, to advanced topics like Python GUI, Python Data Analysis, and more!",
+                        "Last Updated": "9/2015",
+                        "language": "English",
+                        "Closed Caption": "English",
+                        "instructor": "maximlian",
+                        "image": "https://img-b.udemycdn.com/course/240x135/394676_ce3d_5.jpg",
+                        "price": "269.99",
+                        "category": "python",
+                        "stars": 4,
+                        "bestSeller": false,
+                        "students": 3000,
+                        "numberOfRatings": 1500
+                    }
+                ]
+            },
+            "JavaScript": {
+                "title": "Grow your software development skills with JavaScript",
+                "description": "JavaScript is a text-based computer programming language used to make dynamic web pages. A must-learn for aspiring web developers or programmers, JavaScript can be used for features like image carousels, displaying countdowns and timers, and playing media on a webpage. With JavaScript online classes, you can learn to build...",
+                "courses": [
+                    {
+                        "id": 3,
+                        "title": "Javascript from zero to hero",
+                        "description": "Learn javascript online and supercharge your web design with this Javascript for beginners training course.",
+                        "Last Updated": "9/2015",
+                        "language": "English",
+                        "Closed Caption": "English",
+                        "instructor": "Tech Learning Network",
+                        "image": "https://img-b.udemycdn.com/course/240x135/63612_8797_4.jpg",
+                        "price": "199.99",
+                        "category": "javascript",
+                        "stars": 4.5,
+                        "bestSeller": false,
+                        "students": 2900,
+                        "numberOfRatings": 1000
+                    },
+                    {
+                        "id": 4,
+                        "title": "Javascript for Beginners",
+                        "instructor": "Tech Learning Network",
+                        "description": "Learn javascript online and supercharge your web design with this Javascript for beginners training course.",
+                        "Last Updated": "9/2015",
+                        "language": "English",
+                        "Closed Caption": "English",
+                        "image": "https://img-b.udemycdn.com/course/240x135/8324_fa84_13.jpg",
+                        "price": "199.99",
+                        "category": "javascript",
+                        "stars": 4.7,
+                        "bestSeller": true,
+                        "students": 15000,
+                        "numberOfRatings": 12000
+                    }
+                ]
+            },
+            "Excel": {
+                "title": "Analyze and visualize data with Excel",
+                "description": "Take a Microsoft Excel course from Udemy, and learn how to use this industry-standard software. Real-world experts will show you the basics like how to organize data into sheets, rows and columns, and advanced techniques like creating complex dynamic formulas. Both small businesses and large companies use Excel to...",
+                "courses": [
+                    {
+                        "id": 5,
+                        "title": "Microsoft Excel 2013 Course Beginners/ Intermediate Training",
+                        "description": "Learn to Master Microsoft Excel In Easy To Follow Step-By-Step Training Course. Comes With Extensive Working Files",
+                        "Last Updated": "9/2015",
+                        "language": "English",
+                        "Closed Caption": "English",
+                        "instructor": "Infinite Skills",
+                        "image": "https://img-b.udemycdn.com/course/240x135/31535_e351_7.jpg",
+                        "price": "296.99",
+                        "category": "excel",
+                        "stars": 4.5,
+                        "bestSeller": false,
+                        "students": 4200,
+                        "numberOfRatings": 3500
+                    },
+                    {
+                        "id": 6,
+                        "title": "Microsoft Excel 2013 Advanced. Online Excel Training Course",
+                        "description": "Learn to Master Microsoft Excel In Easy To Follow Step-By-Step Training Course. Comes With Extensive Working Files",
+                        "Last Updated": "9/2015",
+                        "language": "English",
+                        "Closed Caption": "English",
+                        "instructor": "Infinite Skills",
+                        "image": "https://img-b.udemycdn.com/course/240x135/39292_b3f3_9.jpg",
+                        "price": "296.99",
+                        "category": "excel",
+                        "stars": 4.8,
+                        "bestSeller": true,
+                        "students": 18320,
+                        "numberOfRatings": 15000
+                    }
+                ]
+            },
+            "Web Development": {
+                "title": "Build websites and applications with Web Development",
+                "description": "The world of web development is as wide as the internet itself. Much of our social and vocational lives play out on the internet, which prompts new industries aimed at creating, managing, and debugging the websites and applications that we increasingly rely on.",
+                "courses": [
+                    {
+                        "id": 7,
+                        "title": "The Complete 2022 Web Development Course - Build 15 Projects",
+                        "description": "Complete coverage of HTML, CSS, Javascript while you Earn Four Respected Certifications",
+                        "Last Updated": "9/2015",
+                        "language": "English",
+                        "Closed Caption": "English",
+                        "instructor": "Development Island (UK)",
+                        "image": "https://img-b.udemycdn.com/course/240x135/548278_b005_9.jpg",
+                        "price": "319.99",
+                        "category": "web development",
+                        "stars": 4.6,
+                        "bestSeller": true,
+                        "students": 19000,
+                        "numberOfRatings": 18000
+                    },
+                    {
+                        "id": 8,
+                        "title": "The Web Developer Bootcamp 2022",
+                        "description": "Complete coverage of HTML, CSS, Javascript while you Earn Four Respected Certifications",
+                        "Last Updated": "9/2015",
+                        "language": "English",
+                        "Closed Caption": "English",
+                        "instructor": "Colt Steele",
+                        "image": "https://img-b.udemycdn.com/course/240x135/625204_436a_3.jpg",
+                        "price": "269.99",
+                        "category": "web development",
+                        "stars": 4.1,
+                        "bestSeller": false,
+                        "students": 5200,
+                        "numberOfRatings": 4900
+                    }
+                ]
+            }
+        }
+    ]
+}

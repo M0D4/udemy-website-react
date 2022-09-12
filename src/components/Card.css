@@ -24,6 +24,7 @@
 
 .course-card {
     width: 19%;
+    cursor: pointer;
 }
 
 .card {

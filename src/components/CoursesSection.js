@@ -22,13 +22,13 @@ function CoursesSection(props) {
                 </div>
             </div>
             <main className='courses-section mb-5'>
-                <div className="font-weight-bold m-2">
-                    <h2>{title}</h2>
+                <div className="courses-section-title m-2">
+                    <h2 className='font-weight-bold'>{title}</h2>
                 </div>
-                <div className="p-text m-2">
+                <div className="courses-section-description m-2">
                     <p>{description}</p>
                 </div>
-                <div className='m-2'>
+                <div className='m-2 mb-4'>
                     <button className="btn btn-md btn-explore font-weight-bold p-2">Explore {category}</button>
                 </div>
                 <div className='m-2'>

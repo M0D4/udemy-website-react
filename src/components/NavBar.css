@@ -6,7 +6,9 @@
     padding: 0 24px;
     background-color: white;
     font-family: udemy sans, -apple-system, BlinkMacSystemFont, Roboto, segoe ui, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
-    box-shadow: 0 0 10px 0 #ddd;
+    box-shadow: 0 0 2px 0 #ddd;
+    position: relative;
+    z-index: 5;
 }
 
 .small-screen {
