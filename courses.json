@@ -12,7 +12,16 @@
                         "Last Updated": "9/2015",
                         "language": "English",
                         "Closed Caption": "English",
-                        "instructor": "maximlian",
+                        "instructor": {
+                            "name": "maximlian",
+                            "title": "Head of Data Science at Pierian Training",
+                            "rating": "4.6",
+                            "reviews": "941,533",
+                            "students": "3,015,690",
+                            "courses": "54",
+                            "description": "Jose Marcial Portilla has a BS and MS in Mechanical Engineering from Santa Clara University and years of experience as a professional instructor and trainer for Data Science, Machine Learning and Python Programming. He has publications and patents in various fields such as microfluidics, materials science, and data science. Over the course of his career he has developed a skill set in analyzing data and he hopes to use his experience in teaching and data science to help other people learn the power of programming, the ability to analyze data, and the skills needed to present the data in clear and beautiful visualizations. Currently he works as the Head of Data Science for Pierian Training and provides in-person data science and python programming training courses to employees working at top companies, including General Electric, Cigna, The New York Times, Credit Suisse, McKinsey and many more. Feel free to check out the website link to find out more information about training offerings.",
+                            "image": "https://img-b.udemycdn.com/user/200_H/9685726_67e7_4.jpg"
+                        },
                         "image": "https://img-b.udemycdn.com/course/240x135/394676_ce3d_5.jpg",
                         "price": "269.99",
                         "category": "python",
@@ -28,6 +37,13 @@
                             "Learn how to work with various data formats within python, including: JSON,HTML, and MS Excel Worksheets.",
                             "Create data visualizations using matplotlib and the seaborn modules with python.",
                             "Have a portfolio of various data analysis projects."
+                        ],
+                        "length": "15 sections • 110 lectures • 21h 5m total length",
+                        "requirements": [
+                            "Basic math skills.",
+                            "Basic to Intermediate Python Skills",
+                            "Have a computer (either Mac, Windows, or Linux)",
+                            "Desire to learn!"
                         ]
                     },
                     {
@@ -37,14 +53,39 @@
                         "Last Updated": "9/2015",
                         "language": "English",
                         "Closed Caption": "English",
-                        "instructor": "Jose Portilla",
+                        "instructor": {
+                            "name": "Jose Portilla",
+                            "title": "Head of Data Science at Pierian Training",
+                            "rating": "4.6",
+                            "reviews": "941,533",
+                            "students": "3,015,690",
+                            "courses": "54",
+                            "description": "Jose Marcial Portilla has a BS and MS in Mechanical Engineering from Santa Clara University and years of experience as a professional instructor and trainer for Data Science, Machine Learning and Python Programming. He has publications and patents in various fields such as microfluidics, materials science, and data science. Over the course of his career he has developed a skill set in analyzing data and he hopes to use his experience in teaching and data science to help other people learn the power of programming, the ability to analyze data, and the skills needed to present the data in clear and beautiful visualizations. Currently he works as the Head of Data Science for Pierian Training and provides in-person data science and python programming training courses to employees working at top companies, including General Electric, Cigna, The New York Times, Credit Suisse, McKinsey and many more. Feel free to check out the website link to find out more information about training offerings.",
+                            "image": "https://img-b.udemycdn.com/user/200_H/9685726_67e7_4.jpg"
+                        },
                         "image": "https://img-b.udemycdn.com/course/240x135/396876_cc92_7.jpg",
                         "price": "319.99",
                         "category": "python",
                         "stars": 4.4,
                         "bestSeller": true,
                         "students": 19000,
-                        "numberOfRatings": 15000
+                        "numberOfRatings": 15000,
+                        "what you will learn": [
+                            "Have an intermediate skill level of Python programming.",
+                            "Use the Jupyter Notebook Environment.",
+                            "Use the numpy library to create and manipulate arrays.",
+                            "Use the pandas module with Python to create and structure data.",
+                            "Learn how to work with various data formats within python, including: JSON,HTML, and MS Excel Worksheets.",
+                            "Create data visualizations using matplotlib and the seaborn modules with python.",
+                            "Have a portfolio of various data analysis projects."
+                        ],
+                        "length": "15 sections • 110 lectures • 21h 5m total length",
+                        "requirements": [
+                            "Basic math skills.",
+                            "Basic to Intermediate Python Skills",
+                            "Have a computer (either Mac, Windows, or Linux)",
+                            "Desire to learn!"
+                        ]
                     },
                     {
                         "id": 9,
@@ -53,14 +94,39 @@
                         "Last Updated": "9/2015",
                         "language": "English",
                         "Closed Caption": "English",
-                        "instructor": "maximlian",
+                        "instructor": {
+                            "name": "maximlian",
+                            "title": "Head of Data Science at Pierian Training",
+                            "rating": "4.6",
+                            "reviews": "941,533",
+                            "students": "3,015,690",
+                            "courses": "54",
+                            "description": "Jose Marcial Portilla has a BS and MS in Mechanical Engineering from Santa Clara University and years of experience as a professional instructor and trainer for Data Science, Machine Learning and Python Programming. He has publications and patents in various fields such as microfluidics, materials science, and data science. Over the course of his career he has developed a skill set in analyzing data and he hopes to use his experience in teaching and data science to help other people learn the power of programming, the ability to analyze data, and the skills needed to present the data in clear and beautiful visualizations. Currently he works as the Head of Data Science for Pierian Training and provides in-person data science and python programming training courses to employees working at top companies, including General Electric, Cigna, The New York Times, Credit Suisse, McKinsey and many more. Feel free to check out the website link to find out more information about training offerings.",
+                            "image": "https://img-b.udemycdn.com/user/200_H/9685726_67e7_4.jpg"
+                        },
                         "image": "https://img-b.udemycdn.com/course/240x135/394676_ce3d_5.jpg",
                         "price": "269.99",
                         "category": "python",
                         "stars": 4,
                         "bestSeller": false,
                         "students": 3000,
-                        "numberOfRatings": 1500
+                        "numberOfRatings": 1500,
+                        "what you will learn": [
+                            "Have an intermediate skill level of Python programming.",
+                            "Use the Jupyter Notebook Environment.",
+                            "Use the numpy library to create and manipulate arrays.",
+                            "Use the pandas module with Python to create and structure data.",
+                            "Learn how to work with various data formats within python, including: JSON,HTML, and MS Excel Worksheets.",
+                            "Create data visualizations using matplotlib and the seaborn modules with python.",
+                            "Have a portfolio of various data analysis projects."
+                        ],
+                        "length": "15 sections • 110 lectures • 21h 5m total length",
+                        "requirements": [
+                            "Basic math skills.",
+                            "Basic to Intermediate Python Skills",
+                            "Have a computer (either Mac, Windows, or Linux)",
+                            "Desire to learn!"
+                        ]
                     }
                 ]
             },
@@ -75,19 +141,53 @@
                         "Last Updated": "9/2015",
                         "language": "English",
                         "Closed Caption": "English",
-                        "instructor": "Tech Learning Network",
+                        "instructor": {
+                            "name": "Tech Learning Network",
+                            "title": "Head of Data Science at Pierian Training",
+                            "rating": "4.6",
+                            "reviews": "941,533",
+                            "students": "3,015,690",
+                            "courses": "54",
+                            "description": "Jose Marcial Portilla has a BS and MS in Mechanical Engineering from Santa Clara University and years of experience as a professional instructor and trainer for Data Science, Machine Learning and Python Programming. He has publications and patents in various fields such as microfluidics, materials science, and data science. Over the course of his career he has developed a skill set in analyzing data and he hopes to use his experience in teaching and data science to help other people learn the power of programming, the ability to analyze data, and the skills needed to present the data in clear and beautiful visualizations. Currently he works as the Head of Data Science for Pierian Training and provides in-person data science and python programming training courses to employees working at top companies, including General Electric, Cigna, The New York Times, Credit Suisse, McKinsey and many more. Feel free to check out the website link to find out more information about training offerings.",
+                            "image": "https://img-b.udemycdn.com/user/200_H/9685726_67e7_4.jpg"
+                        },
                         "image": "https://img-b.udemycdn.com/course/240x135/63612_8797_4.jpg",
                         "price": "199.99",
                         "category": "javascript",
                         "stars": 4.5,
                         "bestSeller": false,
                         "students": 2900,
-                        "numberOfRatings": 1000
+                        "numberOfRatings": 1000,
+                        "what you will learn": [
+                            "Have an intermediate skill level of Python programming.",
+                            "Use the Jupyter Notebook Environment.",
+                            "Use the numpy library to create and manipulate arrays.",
+                            "Use the pandas module with Python to create and structure data.",
+                            "Learn how to work with various data formats within python, including: JSON,HTML, and MS Excel Worksheets.",
+                            "Create data visualizations using matplotlib and the seaborn modules with python.",
+                            "Have a portfolio of various data analysis projects."
+                        ],
+                        "length": "15 sections • 110 lectures • 21h 5m total length",
+                        "requirements": [
+                            "Basic math skills.",
+                            "Basic to Intermediate Python Skills",
+                            "Have a computer (either Mac, Windows, or Linux)",
+                            "Desire to learn!"
+                        ]
                     },
                     {
                         "id": 4,
                         "title": "Javascript for Beginners",
-                        "instructor": "Tech Learning Network",
+                        "instructor": {
+                            "name": "Tech Learning Network",
+                            "title": "Head of Data Science at Pierian Training",
+                            "rating": "4.6",
+                            "reviews": "941,533",
+                            "students": "3,015,690",
+                            "courses": "54",
+                            "description": "Jose Marcial Portilla has a BS and MS in Mechanical Engineering from Santa Clara University and years of experience as a professional instructor and trainer for Data Science, Machine Learning and Python Programming. He has publications and patents in various fields such as microfluidics, materials science, and data science. Over the course of his career he has developed a skill set in analyzing data and he hopes to use his experience in teaching and data science to help other people learn the power of programming, the ability to analyze data, and the skills needed to present the data in clear and beautiful visualizations. Currently he works as the Head of Data Science for Pierian Training and provides in-person data science and python programming training courses to employees working at top companies, including General Electric, Cigna, The New York Times, Credit Suisse, McKinsey and many more. Feel free to check out the website link to find out more information about training offerings.",
+                            "image": "https://img-b.udemycdn.com/user/200_H/9685726_67e7_4.jpg"
+                        },
                         "description": "Learn javascript online and supercharge your web design with this Javascript for beginners training course.",
                         "Last Updated": "9/2015",
                         "language": "English",
@@ -98,7 +198,23 @@
                         "stars": 4.7,
                         "bestSeller": true,
                         "students": 15000,
-                        "numberOfRatings": 12000
+                        "numberOfRatings": 12000,
+                        "what you will learn": [
+                            "Have an intermediate skill level of Python programming.",
+                            "Use the Jupyter Notebook Environment.",
+                            "Use the numpy library to create and manipulate arrays.",
+                            "Use the pandas module with Python to create and structure data.",
+                            "Learn how to work with various data formats within python, including: JSON,HTML, and MS Excel Worksheets.",
+                            "Create data visualizations using matplotlib and the seaborn modules with python.",
+                            "Have a portfolio of various data analysis projects."
+                        ],
+                        "length": "15 sections • 110 lectures • 21h 5m total length",
+                        "requirements": [
+                            "Basic math skills.",
+                            "Basic to Intermediate Python Skills",
+                            "Have a computer (either Mac, Windows, or Linux)",
+                            "Desire to learn!"
+                        ]
                     }
                 ]
             },
@@ -113,14 +229,39 @@
                         "Last Updated": "9/2015",
                         "language": "English",
                         "Closed Caption": "English",
-                        "instructor": "Infinite Skills",
+                        "instructor": {
+                            "name": "Infinite Skills",
+                            "title": "Head of Data Science at Pierian Training",
+                            "rating": "4.6",
+                            "reviews": "941,533",
+                            "students": "3,015,690",
+                            "courses": "54",
+                            "description": "Jose Marcial Portilla has a BS and MS in Mechanical Engineering from Santa Clara University and years of experience as a professional instructor and trainer for Data Science, Machine Learning and Python Programming. He has publications and patents in various fields such as microfluidics, materials science, and data science. Over the course of his career he has developed a skill set in analyzing data and he hopes to use his experience in teaching and data science to help other people learn the power of programming, the ability to analyze data, and the skills needed to present the data in clear and beautiful visualizations. Currently he works as the Head of Data Science for Pierian Training and provides in-person data science and python programming training courses to employees working at top companies, including General Electric, Cigna, The New York Times, Credit Suisse, McKinsey and many more. Feel free to check out the website link to find out more information about training offerings.",
+                            "image": "https://img-b.udemycdn.com/user/200_H/9685726_67e7_4.jpg"
+                        },
                         "image": "https://img-b.udemycdn.com/course/240x135/31535_e351_7.jpg",
                         "price": "296.99",
                         "category": "excel",
                         "stars": 4.5,
                         "bestSeller": false,
                         "students": 4200,
-                        "numberOfRatings": 3500
+                        "numberOfRatings": 3500,
+                        "what you will learn": [
+                            "Have an intermediate skill level of Python programming.",
+                            "Use the Jupyter Notebook Environment.",
+                            "Use the numpy library to create and manipulate arrays.",
+                            "Use the pandas module with Python to create and structure data.",
+                            "Learn how to work with various data formats within python, including: JSON,HTML, and MS Excel Worksheets.",
+                            "Create data visualizations using matplotlib and the seaborn modules with python.",
+                            "Have a portfolio of various data analysis projects."
+                        ],
+                        "length": "15 sections • 110 lectures • 21h 5m total length",
+                        "requirements": [
+                            "Basic math skills.",
+                            "Basic to Intermediate Python Skills",
+                            "Have a computer (either Mac, Windows, or Linux)",
+                            "Desire to learn!"
+                        ]
                     },
                     {
                         "id": 6,
@@ -129,14 +270,39 @@
                         "Last Updated": "9/2015",
                         "language": "English",
                         "Closed Caption": "English",
-                        "instructor": "Infinite Skills",
+                        "instructor": {
+                            "name": "Infinite Skills",
+                            "title": "Head of Data Science at Pierian Training",
+                            "rating": "4.6",
+                            "reviews": "941,533",
+                            "students": "3,015,690",
+                            "courses": "54",
+                            "description": "Jose Marcial Portilla has a BS and MS in Mechanical Engineering from Santa Clara University and years of experience as a professional instructor and trainer for Data Science, Machine Learning and Python Programming. He has publications and patents in various fields such as microfluidics, materials science, and data science. Over the course of his career he has developed a skill set in analyzing data and he hopes to use his experience in teaching and data science to help other people learn the power of programming, the ability to analyze data, and the skills needed to present the data in clear and beautiful visualizations. Currently he works as the Head of Data Science for Pierian Training and provides in-person data science and python programming training courses to employees working at top companies, including General Electric, Cigna, The New York Times, Credit Suisse, McKinsey and many more. Feel free to check out the website link to find out more information about training offerings.",
+                            "image": "https://img-b.udemycdn.com/user/200_H/9685726_67e7_4.jpg"
+                        },
                         "image": "https://img-b.udemycdn.com/course/240x135/39292_b3f3_9.jpg",
                         "price": "296.99",
                         "category": "excel",
                         "stars": 4.8,
                         "bestSeller": true,
                         "students": 18320,
-                        "numberOfRatings": 15000
+                        "numberOfRatings": 15000,
+                        "what you will learn": [
+                            "Have an intermediate skill level of Python programming.",
+                            "Use the Jupyter Notebook Environment.",
+                            "Use the numpy library to create and manipulate arrays.",
+                            "Use the pandas module with Python to create and structure data.",
+                            "Learn how to work with various data formats within python, including: JSON,HTML, and MS Excel Worksheets.",
+                            "Create data visualizations using matplotlib and the seaborn modules with python.",
+                            "Have a portfolio of various data analysis projects."
+                        ],
+                        "length": "15 sections • 110 lectures • 21h 5m total length",
+                        "requirements": [
+                            "Basic math skills.",
+                            "Basic to Intermediate Python Skills",
+                            "Have a computer (either Mac, Windows, or Linux)",
+                            "Desire to learn!"
+                        ]
                     }
                 ]
             },
@@ -151,14 +317,39 @@
                         "Last Updated": "9/2015",
                         "language": "English",
                         "Closed Caption": "English",
-                        "instructor": "Development Island (UK)",
+                        "instructor": {
+                            "name": "Development Island (UK)",
+                            "title": "Head of Data Science at Pierian Training",
+                            "rating": "4.6",
+                            "reviews": "941,533",
+                            "students": "3,015,690",
+                            "courses": "54",
+                            "description": "Jose Marcial Portilla has a BS and MS in Mechanical Engineering from Santa Clara University and years of experience as a professional instructor and trainer for Data Science, Machine Learning and Python Programming. He has publications and patents in various fields such as microfluidics, materials science, and data science. Over the course of his career he has developed a skill set in analyzing data and he hopes to use his experience in teaching and data science to help other people learn the power of programming, the ability to analyze data, and the skills needed to present the data in clear and beautiful visualizations. Currently he works as the Head of Data Science for Pierian Training and provides in-person data science and python programming training courses to employees working at top companies, including General Electric, Cigna, The New York Times, Credit Suisse, McKinsey and many more. Feel free to check out the website link to find out more information about training offerings.",
+                            "image": "https://img-b.udemycdn.com/user/200_H/9685726_67e7_4.jpg"
+                        },
                         "image": "https://img-b.udemycdn.com/course/240x135/548278_b005_9.jpg",
                         "price": "319.99",
                         "category": "web development",
                         "stars": 4.6,
                         "bestSeller": true,
                         "students": 19000,
-                        "numberOfRatings": 18000
+                        "numberOfRatings": 18000,
+                        "what you will learn": [
+                            "Have an intermediate skill level of Python programming.",
+                            "Use the Jupyter Notebook Environment.",
+                            "Use the numpy library to create and manipulate arrays.",
+                            "Use the pandas module with Python to create and structure data.",
+                            "Learn how to work with various data formats within python, including: JSON,HTML, and MS Excel Worksheets.",
+                            "Create data visualizations using matplotlib and the seaborn modules with python.",
+                            "Have a portfolio of various data analysis projects."
+                        ],
+                        "length": "15 sections • 110 lectures • 21h 5m total length",
+                        "requirements": [
+                            "Basic math skills.",
+                            "Basic to Intermediate Python Skills",
+                            "Have a computer (either Mac, Windows, or Linux)",
+                            "Desire to learn!"
+                        ]
                     },
                     {
                         "id": 8,
@@ -167,14 +358,39 @@
                         "Last Updated": "9/2015",
                         "language": "English",
                         "Closed Caption": "English",
-                        "instructor": "Colt Steele",
+                        "instructor": {
+                            "name": "Colt Steele",
+                            "title": "Head of Data Science at Pierian Training",
+                            "rating": "4.6",
+                            "reviews": "941,533",
+                            "students": "3,015,690",
+                            "courses": "54",
+                            "description": "Jose Marcial Portilla has a BS and MS in Mechanical Engineering from Santa Clara University and years of experience as a professional instructor and trainer for Data Science, Machine Learning and Python Programming. He has publications and patents in various fields such as microfluidics, materials science, and data science. Over the course of his career he has developed a skill set in analyzing data and he hopes to use his experience in teaching and data science to help other people learn the power of programming, the ability to analyze data, and the skills needed to present the data in clear and beautiful visualizations. Currently he works as the Head of Data Science for Pierian Training and provides in-person data science and python programming training courses to employees working at top companies, including General Electric, Cigna, The New York Times, Credit Suisse, McKinsey and many more. Feel free to check out the website link to find out more information about training offerings.",
+                            "image": "https://img-b.udemycdn.com/user/200_H/9685726_67e7_4.jpg"
+                        },
                         "image": "https://img-b.udemycdn.com/course/240x135/625204_436a_3.jpg",
                         "price": "269.99",
                         "category": "web development",
                         "stars": 4.1,
                         "bestSeller": false,
                         "students": 5200,
-                        "numberOfRatings": 4900
+                        "numberOfRatings": 4900,
+                        "what you will learn": [
+                            "Have an intermediate skill level of Python programming.",
+                            "Use the Jupyter Notebook Environment.",
+                            "Use the numpy library to create and manipulate arrays.",
+                            "Use the pandas module with Python to create and structure data.",
+                            "Learn how to work with various data formats within python, including: JSON,HTML, and MS Excel Worksheets.",
+                            "Create data visualizations using matplotlib and the seaborn modules with python.",
+                            "Have a portfolio of various data analysis projects."
+                        ],
+                        "length": "15 sections • 110 lectures • 21h 5m total length",
+                        "requirements": [
+                            "Basic math skills.",
+                            "Basic to Intermediate Python Skills",
+                            "Have a computer (either Mac, Windows, or Linux)",
+                            "Desire to learn!"
+                        ]
                     }
                 ]
             }

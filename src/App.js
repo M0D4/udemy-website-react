@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import Home from './components/Home';
 import NavBar from './components/NavBar';
 import CoursePage from './components/CoursePage';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 const course = {
@@ -13,8 +14,24 @@ const course = {
   "Last Updated": "9/2015",
   "language": "English",
   "Closed Caption": "English",
-  instructor: 'maximlian',
-  stars: 4.4,
+  instructor: {
+    "name": "maximlian",
+    "title": "Head of Data Science at Pierian Training",
+    "rating": "4.6",
+    "reviews": "941,533",
+    "students": "3,015,690",
+    "courses": "54",
+    "description": "Jose Marcial Portilla has a BS and MS in Mechanical Engineering from Santa Clara University and years of experience as a professional instructor and trainer for Data Science, Machine Learning and Python Programming. He has publications and patents in various fields such as microfluidics, materials science, and data science. Over the course of his career he has developed a skill set in analyzing data and he hopes to use his experience in teaching and data science to help other people learn the power of programming, the ability to analyze data, and the skills needed to present the data in clear and beautiful visualizations. Currently he works as the Head of Data Science for Pierian Training and provides in-person data science and python programming training courses to employees working at top companies, including General Electric, Cigna, The New York Times, Credit Suisse, McKinsey and many more. Feel free to check out the website link to find out more information about training offerings.",
+    "image": "https://img-b.udemycdn.com/user/200_H/9685726_67e7_4.jpg"
+  },
+  rating: {
+    "average": 4.4,
+    "1": 2,
+    "2": 3,
+    "3": 13,
+    "4": 36,
+    "5": 64
+  },
   students: 19000,
   price: 199.99,
   bestSeller: true,
@@ -29,6 +46,13 @@ const course = {
     "Learn how to work with various data formats within python, including: JSON,HTML, and MS Excel Worksheets.",
     "Create data visualizations using matplotlib and the seaborn modules with python.",
     "Have a portfolio of various data analysis projects."
+  ],
+  "length": "15 sections • 110 lectures • 21h 5m total length",
+  "requirements": [
+    "Basic math skills.",
+    "Basic to Intermediate Python Skills",
+    "Have a computer (either Mac, Windows, or Linux)",
+    "Desire to learn!",
   ]
 }
 const course2 = {
@@ -38,13 +62,51 @@ const course2 = {
   "Last Updated": "9/2015",
   "language": "English",
   "Closed Caption": "English",
-  instructor: 'Jose Portilla',
-  stars: "3",
+  instructor: {
+    "name": 'Jose Portilla',
+    "title": "Head of Data Science at Pierian Training",
+    "rating": "4.6",
+    "reviews": "941,533",
+    "students": "3,015,690",
+    "courses": "54",
+    "description": "Jose Marcial Portilla has a BS and MS in Mechanical Engineering from Santa Clara University and years of experience as a professional instructor and trainer for Data Science, Machine Learning and Python Programming. He has publications and patents in various fields such as microfluidics, materials science, and data science. Over the course of his career he has developed a skill set in analyzing data and he hopes to use his experience in teaching and data science to help other people learn the power of programming, the ability to analyze data, and the skills needed to present the data in clear and beautiful visualizations. Currently he works as the Head of Data Science for Pierian Training and provides in-person data science and python programming training courses to employees working at top companies, including General Electric, Cigna, The New York Times, Credit Suisse, McKinsey and many more. Feel free to check out the website link to find out more information about training offerings.",
+    "image": "https://img-b.udemycdn.com/user/200_H/9685726_67e7_4.jpg"
+  },
+  rating: {
+    "average": 4.4,
+    "1": 2,
+    "2": 3,
+    "3": 13,
+    "4": 36,
+    "5": 64
+  },
   students: 1000,
   price: 319.99,
   bestSeller: false,
   image: "https://img-b.udemycdn.com/course/240x135/396876_cc92_7.jpg",
-  numberOfRatings: 950
+  numberOfRatings: 950,
+  category: "Python",
+  "what you will learn": [
+    "Have an intermediate skill level of Python programming.",
+    "Use the Jupyter Notebook Environment.",
+    "Use the numpy library to create and manipulate arrays.",
+    "Use the pandas module with Python to create and structure data.",
+    "Learn how to work with various data formats within python, including: JSON,HTML, and MS Excel Worksheets.",
+    "Create data visualizations using matplotlib and the seaborn modules with python.",
+    "Have a portfolio of various data analysis projects."
+  ],
+  "length": "15 sections • 110 lectures • 21h 5m total length",
+  "requirements": [
+    "Basic math skills.",
+    "Basic to Intermediate Python Skills",
+    "Have a computer (either Mac, Windows, or Linux)",
+    "Desire to learn!",
+  ]
+}
+
+var courses = {
+  "1": { ...course },
+  "2": { ...course2 }
 }
 
 
@@ -75,13 +137,20 @@ function App() {
   return (
     <>
 
-      <NavBar onFilter={(searchText) => handleFilter(searchText)}></NavBar>
-      {/* <Home cards={cards}
+      <BrowserRouter>
+        <NavBar onFilter={(searchText) => handleFilter(searchText)}></NavBar>
+        <Routes>
+          <Route path={"/"} element={<Home cards={cards}
+            coursesSectionTitle={coursesSectionTitle}
+            coursesSectionDescription={coursesSectionDescription}
+            category={category}></Home>} />
+          {/* <Home cards={cards}
         coursesSectionTitle={coursesSectionTitle}
         coursesSectionDescription={coursesSectionDescription}
         category={category}></Home> */}
-      <CoursePage course={course}></CoursePage>
-      <div style={{ height: 1500 }}></div>
+          <Route path="/course/:id" element={<><CoursePage courses={courses}></CoursePage><div style={{ height: 1500 }}></div></>} />
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

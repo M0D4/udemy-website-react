@@ -1,28 +1,32 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './CoursePage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGlobe, faClosedCaptioning, faCheck } from '@fortawesome/free-solid-svg-icons'
+import { faGlobe, faClosedCaptioning, faCheck, faMedal, faUserGroup, faCirclePlay } from '@fortawesome/free-solid-svg-icons'
 import NavBar from './NavBar';
+import { Link, useParams } from 'react-router-dom';
 
-var course;
+var courses;
+
+var [course, setCourse] = [];
 
 function CoursePage(props) {
-    course = props.course;
-
+    courses = props.courses;
+    const courseId = useParams()["id"];
+    [course, setCourse] = useState(courses[courseId]);
     return (
         <>
             <div className='slider-menu text-white'>
                 <h6 className='course-title-sm font-weight-bold mb-1'>{course.title}</h6>
                 {course.bestSeller && <span className='bestSeller badge mr-2'>Bestseller</span>}
-                <span className='font-weight-bold rating mr-2'>{course.stars}</span>
+                <span className='font-weight-bold rating mr-2'>{course["rating"]["average"]}</span>
                 <span className={"fa fa-star star checked"}></span>
-                <span className='light-color ml-2 '>({<span className='light-color numberOfRatings'>{course.numberOfRatings + " ratings"}</span>})</span>
+                <span className='light-color-primary ml-2 '>({<span className='light-color-primary numberOfRatings'>{course.numberOfRatings + " ratings"}</span>})</span>
                 <span className='ml-2'>{course.students + " students"}</span>
             </div>
             <div className='top-container'>
                 <div className='inner-container text-white'>
                     <div>
-                        <div className='light-color font-weight-bold path'>
+                        <div className='light-color-primary font-weight-bold path'>
                             <div className='topic-menu'>
                                 {"Development > " + course.category}
                             </div>
@@ -32,12 +36,12 @@ function CoursePage(props) {
                                 <h1 className='course-title font-weight-bold mb-3'>{course.title}</h1>
                                 <h5 className='course-description mb-3'>{course.description}</h5>
                                 {course.bestSeller && <span className='bestSeller badge mr-2'>Bestseller</span>}
-                                <span className='font-weight-bold rating mr-2'>{course.stars}</span>
-                                {getStars(course.stars).map((star, idx) => <span key={idx} className={"fa fa-star star" + (star.checked > 0 ? " checked" : " notChecked")}></span>
+                                <span className='font-weight-bold rating mr-2'>{course["rating"]["average"]}</span>
+                                {getStars(course["rating"]["average"]).map((star, idx) => <span key={idx} className={"fa fa-star star" + (star.checked > 0 ? " checked" : " notChecked")}></span>
                                 )}
-                                <span className='light-color ml-2 '>({<span className='light-color numberOfRatings'>{course.numberOfRatings + " ratings"}</span>})</span>
+                                <span className='light-color-primary ml-2 '>({<span className='light-color-primary numberOfRatings'>{course.numberOfRatings + " ratings"}</span>})</span>
                                 <span className='ml-2'>{course.students + " students"}</span>
-                                <div className='text-white my-2'>Created by {<span className='light-color instructor-link'>{course.instructor}</span>}</div>
+                                <div className='text-white my-2'>Created by {<span className='light-color-primary instructor-link'>{course.instructor["name"]}</span>}</div>
                                 <i className="fa fa-exclamation-circle mr-2" aria-hidden="true"></i>
                                 <span className='mr-4'>Last updated {course["Last Updated"]}</span>
                                 <span className='mr-4'>
@@ -51,13 +55,13 @@ function CoursePage(props) {
                 </div>
             </div>
             <div className='navigation-group-wrapper'>
-                <div class="navigation-group-outer-container">
+                <div className="navigation-group-outer-container">
                     <div className='navigation-group-inner-container'>
                         <div className='navigation-group'>
-                            <button href="#overview">Overview</button>
-                            <button>Curriculum</button>
-                            <button>Instructor</button>
-                            <button>Reviews</button>
+                            <a href="#overview"><button>Overview</button></a>
+                            <a href='#curriculum'><button>Curriculum</button></a>
+                            <a href="#instructor"><button>Instructor</button></a>
+                            <a href="#reviews"><button>Reviews</button></a>
                         </div>
                     </div>
                 </div>
@@ -68,8 +72,8 @@ function CoursePage(props) {
                         <h2 className='overview-section-title font-weight-bold'>What you'll learn</h2>
                         <div className='what-you-will-learn-container'>
                             <ul className='overview-list'>
-                                {course["what you will learn"].map(learnBenefit =>
-                                    <li>
+                                {course["what you will learn"].map((learnBenefit, idx) =>
+                                    <li key={idx}>
                                         <div className='learnBenefit'>
                                             <FontAwesomeIcon icon={faCheck} className="check-icon" /> <div className='learnBenefit-text'><span>{learnBenefit}</span></div>
                                         </div>
@@ -79,7 +83,92 @@ function CoursePage(props) {
                         </div>
                     </div>
                 </div>
+                <div className='course-content-section' id="curriculum">
+                    <div className='course-content-wrapper'>
+                        <h2 className='course-content-section-title font-weight-bold mb-4'>Course content</h2>
+                        <div className='before-content-section'>
+                            <p className='course-length-details'>{course["length"]}</p>
+                            <button href='#' className='expand-sections'><span className='font-weight-bold'>Expand all sections</span></button>
+                        </div>
+                    </div>
+                    <div className='requirements mt-5'>
+                        <h2 className='course-content-section-title font-weight-bold'>Requirements</h2>
+                        <ul className='ml-4'>
+                            {course["requirements"].map((requirement, idx) =>
+                                <li key={idx} className="mb-1">
+                                    <div className='requirement'>
+                                        <span>{requirement}</span>
+                                    </div>
+                                </li>
+                            )}
+                        </ul>
+                    </div>
+                    <div className='description mt-5'>
+                        <h2 className='course-content-section-title font-weight-bold'>Description</h2>
+                        <span>{course.description}</span>
+                    </div>
+                </div>
+                <div className='instructor-section mt-5' id='instructor'>
+                    <div className='instructor-wrapper mb-2'>
+                        <h2 className='course-content-section-title font-weight-bold mb-4'>Instructor</h2>
+                    </div>
+                    <div>
+                        <a className='font-weight-bold instructor-name' href='#'>{course.instructor["name"]}</a>
+                    </div>
+                    <div className='instructor-title mb-1'>
+                        <p>{course.instructor["title"]}</p>
+                    </div>
+                    <div className='instructor-card mb-3'>
+                        <img className='instructor-image mr-3' src={course.instructor["image"]} />
+                        <div className='instructor-ratings'>
+                            <div>
+                                <span className='fa fa-star mr-3'></span>
+                                <span>{course.instructor["rating"] + " Instructor Rating"}</span>
+                            </div>
+                            <div>
+                                <FontAwesomeIcon icon={faMedal} className="mr-3" />
+                                <span>{course.instructor["reviews"] + " Reviews"}</span>
+                            </div>
+                            <div>
+                                <FontAwesomeIcon icon={faUserGroup} className="mr-3"></FontAwesomeIcon>
+                                <span>{course.instructor["students"] + " Students"}</span>
+                            </div>
+                            <div>
+                                <FontAwesomeIcon icon={faCirclePlay} className="mr-3"></FontAwesomeIcon>
+                                <span>{course.instructor["courses"] + " Courses"}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className='mb-5'>
+                        <span>{course.instructor["description"]}</span>
+                    </div>
+                    <div>
+                        <h2 className='course-content-section-title font-weight-bold mb-4'>Student feedback</h2>
+                        <div className='feedback-card'>
+                            <div className='left-part'>
+                                <div className='rating-lg font-weight-bold'>{course["rating"]["average"]}</div>
+                                {getStars(course["rating"]["average"]).map((star, idx) => <span key={idx} className={"fa fa-star star-lg" + (star.checked > 0 ? " checked-lg" : " notChecked-lg")}></span>
+                                )}
+                                <div className='font-weight-bold mt-2' style={{ color: "#b4690e", fontSize: 14 }}>Course Rating</div>
+                            </div>
+                            <div className='right-part mt-4 ml-4'>
+                                {getStars(5).map((star, idx) => <div key={idx} className='mb-1 rating-bar'>
+                                    <div className="progress mr-2 mt-2">
+                                        <div className="progress-bar" role="progressbar" style={{ width: course["rating"][5 - idx] + "%" }} aria-valuenow={course["rating"][5 - idx]} aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div className='stars-rating mr-2'>
+                                        {getStars(5 - idx).map((star, idx) => <span key={idx} className={"fa fa-star star-lg" + (star.checked > 0 ? " checked-lg" : " notChecked-lg")}></span>
+                                        )}
+                                    </div>
+                                    <span className='light-color-prime'>{course["rating"][5 - idx] + "%"}</span>
+                                </div>)}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className='review-section mt-5'></div>
             </div>
+            <div style={{ height: 500 }}></div>
         </>
     );
 }
