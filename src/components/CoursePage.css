@@ -361,3 +361,27 @@
 .review-date {
     color: #6a6f73;
 }
+
+.sidebar-outer-container {
+    max-width: 1184px;
+    margin: 0 167px;
+}
+
+.sidebar-inner-container {
+    margin-left: 796px;
+    display: block;
+    position: absolute;
+    top: 32px;
+}
+
+.sidebar-container {
+    width: 34px;
+    z-index: 1;
+    border-bottom: 1px solid #d1d7dc;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.sidebar-content-group {
+    border-bottom: 1px solid #d1d7dc;
+}

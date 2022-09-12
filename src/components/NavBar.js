@@ -1,12 +1,15 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
 import { Link } from 'react-router-dom';
 import './NavBar.css';
 
+
+var message = "";
 
 function NavBar(props) {
     const shoppingCartStyle = {
         fontSize: 29
     }
+
     return (
         <>
             <nav className="nav-bar-container">
@@ -23,8 +26,8 @@ function NavBar(props) {
                 </nav>
                 <div className="search-bar big-screen">
                     <form action="/courses/search" className="search-form">
-                        <button className="search-icon"><i className="fa fa-search"></i></button>
-                        <input className="search-text ml-4" type="text" name="search" placeholder="Search for anything" />
+                        <Link to={"/" + message}><button className="search-icon"><i className="fa fa-search"></i></button></Link>
+                        <input onChange={handleChange} className="search-text ml-4" type="text" name="search" placeholder="Search for anything" />
                     </form>
                 </div>
                 <div className="udemy-business big-screen">
@@ -49,3 +52,7 @@ function NavBar(props) {
 }
 
 export default NavBar;
+
+const handleChange = (event) => {
+    message = (event.target.value);
+}

@@ -23,6 +23,15 @@ function CoursePage(props) {
                 <span className='light-color-primary ml-2 '>({<span className='light-color-primary numberOfRatings'>{course.numberOfRatings + " ratings"}</span>})</span>
                 <span className='ml-2'>{course.students + " students"}</span>
             </div>
+            {/* <div className='sidebar-outer-container'>
+                <div className='sidebar-inner-container'>
+                    <div className='sidebar-container'>
+                        <div className='sidebar-content-group'>
+                            <img src={course["image"]}></img>
+                        </div>
+                    </div>
+                </div>
+            </div> */}
             <div className='top-container'>
                 <div className='inner-container text-white'>
                     <div>
