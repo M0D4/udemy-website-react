@@ -10,7 +10,7 @@ function Home(props) {
     return (
         <>
             <FirstSection></FirstSection>
-            <div>
+            <div className='abc'>
                 <CoursesSection cards={cards}
                     title={coursesSectionTitle}
                     description={coursesSectionDescription}

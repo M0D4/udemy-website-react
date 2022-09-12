@@ -53,3 +53,12 @@
 .card-body {
     padding: 0px;
 }
+
+.link-no-decoration {
+    color: black;
+}
+
+.link-no-decoration:hover {
+    text-decoration: none;
+    color: black;
+}

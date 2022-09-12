@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './NavBar.css';
 
 
@@ -13,9 +14,9 @@ function NavBar(props) {
                     <i className="fa fa-bars"></i>
                 </div>
                 <div className="udemy-logo">
-                    <a href="udemy.com">
+                    <Link to={"/"}>
                         <img className="logo" src={"https://www.udemy.com/staticx/udemy/images/v7/logo-udemy.svg"} alt="Udemy logo" />
-                    </a>
+                    </Link>
                 </div>
                 <nav className="big-screen">
                     <button className="categories hover-change">Categories</button>

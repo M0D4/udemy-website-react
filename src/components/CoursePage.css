@@ -19,19 +19,19 @@
     margin-right: 167px;
 }
 
-.rating {
+.rating-light {
     color: #f3ca8c;
 }
 
-.star {
+.star-light {
     font-size: 15px !important;
 }
 
-.checked {
+.checked-light {
     color: #f3ca8c;
 }
 
-.notChecked {
+.notChecked-light {
     color: white;
     text-shadow: #f3ca8c 0px 0px 1px, #f3ca8c 0px 0px 1px, #f3ca8c 0px 0px 1px,
         #f3ca8c 0px 0px 1px, #f3ca8c 0px 0px 1px, #f3ca8c 0px 0px 1px;

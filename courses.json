@@ -1,12 +1,11 @@
 {
-    "courses": [
-        {
-            "python": {
-                "title": "Expand your career opportunities with Python",
-                "description": "Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to...",
-                "courses": [
-                    {
-                        "id": 1,
+    "courses": {
+        "python": {
+            "title": "Expand your career opportunities with Python",
+            "description": "Take one of Udemy’s range of Python courses and learn how to code using this incredibly useful language. Its simple syntax and readability makes Python perfect for Flask, Django, data science, and machine learning. You’ll learn how to build everything from games to sites to apps. Choose from a range of courses that will appeal to...",
+            "courses": [
+                {
+                    "1": {
                         "title": "Python from zero to hero",
                         "description": "Learn A-Z everything about Python, from the basics, to advanced topics like Python GUI, Python Data Analysis, and more!",
                         "Last Updated": "9/2015",
@@ -45,9 +44,10 @@
                             "Have a computer (either Mac, Windows, or Linux)",
                             "Desire to learn!"
                         ]
-                    },
-                    {
-                        "id": 2,
+                    }
+                },
+                {
+                    "2": {
                         "title": "Learning Python for Data Analysis and Visualization",
                         "description": "Learn A-Z everything about Python, from the basics, to advanced topics like Python GUI, Python Data Analysis, and more!",
                         "Last Updated": "9/2015",
@@ -86,9 +86,10 @@
                             "Have a computer (either Mac, Windows, or Linux)",
                             "Desire to learn!"
                         ]
-                    },
-                    {
-                        "id": 9,
+                    }
+                },
+                {
+                    "9": {
                         "title": "Python from zero to hero 2",
                         "description": "Learn A-Z everything about Python, from the basics, to advanced topics like Python GUI, Python Data Analysis, and more!",
                         "Last Updated": "9/2015",
@@ -128,14 +129,15 @@
                             "Desire to learn!"
                         ]
                     }
-                ]
-            },
-            "JavaScript": {
-                "title": "Grow your software development skills with JavaScript",
-                "description": "JavaScript is a text-based computer programming language used to make dynamic web pages. A must-learn for aspiring web developers or programmers, JavaScript can be used for features like image carousels, displaying countdowns and timers, and playing media on a webpage. With JavaScript online classes, you can learn to build...",
-                "courses": [
-                    {
-                        "id": 3,
+                }
+            ]
+        },
+        "JavaScript": {
+            "title": "Grow your software development skills with JavaScript",
+            "description": "JavaScript is a text-based computer programming language used to make dynamic web pages. A must-learn for aspiring web developers or programmers, JavaScript can be used for features like image carousels, displaying countdowns and timers, and playing media on a webpage. With JavaScript online classes, you can learn to build...",
+            "courses": [
+                {
+                    "3": {
                         "title": "Javascript from zero to hero",
                         "description": "Learn javascript online and supercharge your web design with this Javascript for beginners training course.",
                         "Last Updated": "9/2015",
@@ -174,9 +176,10 @@
                             "Have a computer (either Mac, Windows, or Linux)",
                             "Desire to learn!"
                         ]
-                    },
-                    {
-                        "id": 4,
+                    }
+                },
+                {
+                    "4": {
                         "title": "Javascript for Beginners",
                         "instructor": {
                             "name": "Tech Learning Network",
@@ -216,14 +219,15 @@
                             "Desire to learn!"
                         ]
                     }
-                ]
-            },
-            "Excel": {
-                "title": "Analyze and visualize data with Excel",
-                "description": "Take a Microsoft Excel course from Udemy, and learn how to use this industry-standard software. Real-world experts will show you the basics like how to organize data into sheets, rows and columns, and advanced techniques like creating complex dynamic formulas. Both small businesses and large companies use Excel to...",
-                "courses": [
-                    {
-                        "id": 5,
+                }
+            ]
+        },
+        "Excel": {
+            "title": "Analyze and visualize data with Excel",
+            "description": "Take a Microsoft Excel course from Udemy, and learn how to use this industry-standard software. Real-world experts will show you the basics like how to organize data into sheets, rows and columns, and advanced techniques like creating complex dynamic formulas. Both small businesses and large companies use Excel to...",
+            "courses": [
+                {
+                    "5": {
                         "title": "Microsoft Excel 2013 Course Beginners/ Intermediate Training",
                         "description": "Learn to Master Microsoft Excel In Easy To Follow Step-By-Step Training Course. Comes With Extensive Working Files",
                         "Last Updated": "9/2015",
@@ -262,9 +266,10 @@
                             "Have a computer (either Mac, Windows, or Linux)",
                             "Desire to learn!"
                         ]
-                    },
-                    {
-                        "id": 6,
+                    }
+                },
+                {
+                    "6": {
                         "title": "Microsoft Excel 2013 Advanced. Online Excel Training Course",
                         "description": "Learn to Master Microsoft Excel In Easy To Follow Step-By-Step Training Course. Comes With Extensive Working Files",
                         "Last Updated": "9/2015",
@@ -304,14 +309,15 @@
                             "Desire to learn!"
                         ]
                     }
-                ]
-            },
-            "Web Development": {
-                "title": "Build websites and applications with Web Development",
-                "description": "The world of web development is as wide as the internet itself. Much of our social and vocational lives play out on the internet, which prompts new industries aimed at creating, managing, and debugging the websites and applications that we increasingly rely on.",
-                "courses": [
-                    {
-                        "id": 7,
+                }
+            ]
+        },
+        "Web Development": {
+            "title": "Build websites and applications with Web Development",
+            "description": "The world of web development is as wide as the internet itself. Much of our social and vocational lives play out on the internet, which prompts new industries aimed at creating, managing, and debugging the websites and applications that we increasingly rely on.",
+            "courses": [
+                {
+                    "7": {
                         "title": "The Complete 2022 Web Development Course - Build 15 Projects",
                         "description": "Complete coverage of HTML, CSS, Javascript while you Earn Four Respected Certifications",
                         "Last Updated": "9/2015",
@@ -350,9 +356,10 @@
                             "Have a computer (either Mac, Windows, or Linux)",
                             "Desire to learn!"
                         ]
-                    },
-                    {
-                        "id": 8,
+                    }
+                },
+                {
+                    "8": {
                         "title": "The Web Developer Bootcamp 2022",
                         "description": "Complete coverage of HTML, CSS, Javascript while you Earn Four Respected Certifications",
                         "Last Updated": "9/2015",
@@ -392,8 +399,8 @@
                             "Desire to learn!"
                         ]
                     }
-                ]
-            }
+                }
+            ]
         }
-    ]
+    }
 }

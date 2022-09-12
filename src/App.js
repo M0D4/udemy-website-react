@@ -5,6 +5,7 @@ import Home from './components/Home';
 import NavBar from './components/NavBar';
 import CoursePage from './components/CoursePage';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import PageNotFound from './components/PageNotFound';
 
 
 const course = {
@@ -53,6 +54,11 @@ const course = {
     "Basic to Intermediate Python Skills",
     "Have a computer (either Mac, Windows, or Linux)",
     "Desire to learn!",
+  ],
+  "content": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3"
   ]
 }
 const course2 = {
@@ -101,6 +107,11 @@ const course2 = {
     "Basic to Intermediate Python Skills",
     "Have a computer (either Mac, Windows, or Linux)",
     "Desire to learn!",
+  ],
+  "content": [
+    "Chapter 1",
+    "Chapter 2",
+    "Chapter 3"
   ]
 }
 
@@ -144,11 +155,8 @@ function App() {
             coursesSectionTitle={coursesSectionTitle}
             coursesSectionDescription={coursesSectionDescription}
             category={category}></Home>} />
-          {/* <Home cards={cards}
-        coursesSectionTitle={coursesSectionTitle}
-        coursesSectionDescription={coursesSectionDescription}
-        category={category}></Home> */}
           <Route path="/course/:id" element={<><CoursePage courses={courses}></CoursePage><div style={{ height: 1500 }}></div></>} />
+          <Route path='*' element={<PageNotFound></PageNotFound>}></Route>
         </Routes>
       </BrowserRouter>
     </>

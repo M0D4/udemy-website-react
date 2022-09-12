@@ -2,8 +2,8 @@ import React, { useState } from 'react'
 import './CoursePage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGlobe, faClosedCaptioning, faCheck, faMedal, faUserGroup, faCirclePlay } from '@fortawesome/free-solid-svg-icons'
-import NavBar from './NavBar';
 import { Link, useParams } from 'react-router-dom';
+
 
 var courses;
 
@@ -18,8 +18,8 @@ function CoursePage(props) {
             <div className='slider-menu text-white'>
                 <h6 className='course-title-sm font-weight-bold mb-1'>{course.title}</h6>
                 {course.bestSeller && <span className='bestSeller badge mr-2'>Bestseller</span>}
-                <span className='font-weight-bold rating mr-2'>{course["rating"]["average"]}</span>
-                <span className={"fa fa-star star checked"}></span>
+                <span className='font-weight-bold rating-light mr-2'>{course["rating"]["average"]}</span>
+                <span className={"fa fa-star star-light checked-light"}></span>
                 <span className='light-color-primary ml-2 '>({<span className='light-color-primary numberOfRatings'>{course.numberOfRatings + " ratings"}</span>})</span>
                 <span className='ml-2'>{course.students + " students"}</span>
             </div>
@@ -36,8 +36,8 @@ function CoursePage(props) {
                                 <h1 className='course-title font-weight-bold mb-3'>{course.title}</h1>
                                 <h5 className='course-description mb-3'>{course.description}</h5>
                                 {course.bestSeller && <span className='bestSeller badge mr-2'>Bestseller</span>}
-                                <span className='font-weight-bold rating mr-2'>{course["rating"]["average"]}</span>
-                                {getStars(course["rating"]["average"]).map((star, idx) => <span key={idx} className={"fa fa-star star" + (star.checked > 0 ? " checked" : " notChecked")}></span>
+                                <span className='font-weight-bold rating-light mr-2'>{course["rating"]["average"]}</span>
+                                {getStars(course["rating"]["average"]).map((star, idx) => <span key={idx} className={"fa fa-star star-light" + (star.checked > 0 ? " checked-light" : " notChecked-light")}></span>
                                 )}
                                 <span className='light-color-primary ml-2 '>({<span className='light-color-primary numberOfRatings'>{course.numberOfRatings + " ratings"}</span>})</span>
                                 <span className='ml-2'>{course.students + " students"}</span>
@@ -90,6 +90,7 @@ function CoursePage(props) {
                             <p className='course-length-details'>{course["length"]}</p>
                             <button href='#' className='expand-sections'><span className='font-weight-bold'>Expand all sections</span></button>
                         </div>
+
                     </div>
                     <div className='requirements mt-5'>
                         <h2 className='course-content-section-title font-weight-bold'>Requirements</h2>
