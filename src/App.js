@@ -59,6 +59,20 @@ const course = {
     "Chapter 1",
     "Chapter 2",
     "Chapter 3"
+  ],
+  "reviews": [
+    {
+      "name": "Bryan P.",
+      "rating": "3",
+      "date": "a month ago",
+      "description": "His voice in each video can either be audible or barely audible. If it was consistent then it would be fine, but I have to keep adjusting the volume."
+    },
+    {
+      "name": "Redon D.",
+      "rating": "4",
+      "date": "a month ago",
+      "description": "I found the course to be amazing, the instructor was clear and easy to follow. The instructions were easily available and covered almost every thing I could have asked for. The Q&A section was helpful as well. One negative aspect was that it did not exhaust all the topic especially from the data visualization were matplotlib did not even have a section."
+    }
   ]
 }
 const course2 = {
@@ -112,6 +126,20 @@ const course2 = {
     "Chapter 1",
     "Chapter 2",
     "Chapter 3"
+  ],
+  "reviews": [
+    {
+      "name": "Bryan P.",
+      "rating": "3",
+      "date": "a month ago",
+      "description": "His voice in each video can either be audible or barely audible. If it was consistent then it would be fine, but I have to keep adjusting the volume."
+    },
+    {
+      "name": "Redon D.",
+      "rating": "4",
+      "date": "a month ago",
+      "description": "I found the course to be amazing, the instructor was clear and easy to follow. The instructions were easily available and covered almost every thing I could have asked for. The Q&A section was helpful as well. One negative aspect was that it did not exhaust all the topic especially from the data visualization were matplotlib did not even have a section."
+    }
   ]
 }
 

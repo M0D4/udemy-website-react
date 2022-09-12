@@ -306,3 +306,58 @@
 .stars-rating .star-lg {
     font-size: 15px;
 }
+
+.reviewer-card {
+    padding: 16px 0 24px;
+    border-bottom: 1px solid #d1d7dc;
+    display: flex;
+}
+
+.name-circle-wrapper {
+    display: block;
+    padding: 0 24px 0 0;
+}
+
+.name-circle {
+    width: 48px;
+    height: 48px;
+    background-color: #1c1d1f;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    object-fit: cover;
+    color: #fff;
+}
+
+.thumbs-up,
+.thumbs-down {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid #1c1d1f;
+}
+
+.rate-review {
+    display: flex;
+}
+
+.rate-review-text {
+    font-size: 13px;
+}
+
+.report-review {
+    cursor: pointer;
+    text-decoration: underline;
+    padding-top: 6px;
+    color: #1c1d1f;
+}
+
+.review-date {
+    color: #6a6f73;
+}

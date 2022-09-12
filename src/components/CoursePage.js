@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './CoursePage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faGlobe, faClosedCaptioning, faCheck, faMedal, faUserGroup, faCirclePlay } from '@fortawesome/free-solid-svg-icons'
+import { faThumbsUp, faThumbsDown, faGlobe, faClosedCaptioning, faCheck, faMedal, faUserGroup, faCirclePlay } from '@fortawesome/free-solid-svg-icons'
 import { Link, useParams } from 'react-router-dom';
 
 
@@ -167,7 +167,45 @@ function CoursePage(props) {
                         </div>
                     </div>
                 </div>
-                <div className='review-section mt-5'></div>
+                <div className='instructor-section mt-5' id="reviews">
+                    <div className='instructor-wrapper mb-2'>
+                        <h2 className='course-content-section-title font-weight-bold mb-4'>Reviews</h2>
+                    </div>
+                    {
+                        course["reviews"].map((review, idx) =>
+                            <div key={idx} className='reviewer-card mb-2'>
+                                <div className='mr-3 name-circle-wrapper'>
+                                    <div className='name-circle'>
+                                        <span className='font-weight-bold'>{getLetters(review["name"])}</span>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div className='font-weight-bold mb-2'>{course["reviews"][idx]["name"]}</div>
+                                    <div className='mb-2'>
+                                        {getStars(review["rating"]).map((star, idx) => <span key={idx} className={"fa fa-star star" + (star.checked > 0 ? " checked" : " notChecked")}></span>
+                                        )}
+                                        <span className='ml-2 review-date'>{review["date"]}</span>
+                                    </div>
+                                    <div className='mb-2'>
+                                        {review["description"]}
+                                    </div>
+                                    <div>
+                                        <p className='rate-review-text'>Was this review helpful?</p>
+                                    </div>
+                                    <div className='rate-review'>
+                                        <div className='thumbs-up mr-3'>
+                                            <FontAwesomeIcon icon={faThumbsUp}></FontAwesomeIcon>
+                                        </div>
+                                        <div className='thumbs-down mr-3'>
+                                            <FontAwesomeIcon icon={faThumbsDown}></FontAwesomeIcon>
+                                        </div>
+                                        <div className='report-review'>Report</div>
+                                    </div>
+                                </div>
+                            </div>
+                        )
+                    }
+                </div>
             </div>
             <div style={{ height: 500 }}></div>
         </>
@@ -182,4 +220,9 @@ const getStars = (stars) => {
         list.push(i < parseInt(stars) ? { checked: 1 } : { checked: 0 });
     }
     return list;
+}
+
+const getLetters = (name) => {
+    if (name.indexOf(" ") === -1) return name[0];
+    return name[0] + name[name.indexOf(" ") + 1];
 }
