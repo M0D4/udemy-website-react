@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { useParams } from 'react-router-dom';
+import { useParams, useSearchParams } from 'react-router-dom';
 import CoursesSection from './CoursesSection';
 import FirstSection from './FirstSection';
 import './Home.css'
@@ -7,12 +7,14 @@ import './Home.css'
 
 function Home(props) {
     const { cards, coursesSectionTitle, coursesSectionDescription, category } = props;
-    const s = useParams()["s"];
+    let [searchParams, setSearchParams] = useSearchParams();
+
+    let s = searchParams.get("search");
 
     var courses = cards[category.toLowerCase()]["courses"];
     if (!courses) return <div>Please wait</div>
 
-    var newCourses = Object.values(courses).filter((course) => (s === undefined ||
+    var newCourses = Object.values(courses).filter((course) => (s === null ||
         course["title"].toLowerCase().indexOf(s.trim().toLowerCase()) !== -1));
 
     return (

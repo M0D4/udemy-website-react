@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react'
-import { Link } from 'react-router-dom';
+import { createSearchParams, Link, useNavigate } from 'react-router-dom';
 import './NavBar.css';
 
 
@@ -8,6 +8,12 @@ var message = "";
 function NavBar(props) {
     const shoppingCartStyle = {
         fontSize: 29
+    }
+    let navigate = useNavigate();
+
+    const handleChange = (event) => {
+        navigate({ pathname: "/", search: `?${createSearchParams({ search: event.target.value })}` });
+        message = (event.target.value);
     }
 
     return (
@@ -53,6 +59,3 @@ function NavBar(props) {
 
 export default NavBar;
 
-const handleChange = (event) => {
-    message = (event.target.value);
-}
