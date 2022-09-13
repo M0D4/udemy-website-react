@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
 import Home from './components/Home';
 import NavBar from './components/NavBar';
@@ -143,19 +143,18 @@ const course2 = {
   ]
 }
 
-var courses = {
-  "1": { ...course },
-  "2": { ...course2 }
-}
 
+const initialCards = {
 
-const initialCards = [
-  { id: 1, course: { ...course } },
-  { id: 2, course: { ...course } },
-  { id: 3, course: { ...course } },
-  { id: 4, course: { ...course2 } },
-  { id: 5, course: { ...course2 } }
-];
+  "python": {
+    "1": { ...course },
+    "2": { ...course },
+    "3": { ...course },
+    "4": { ...course2 },
+    "5": { ...course2 },
+  },
+
+};
 
 const coursesSectionTitle = "Expand your career opportunities with Python";
 
@@ -165,25 +164,44 @@ const coursesSectionDescription = `Take one of Udemy’s range of Python courses
  learning. You’ll learn how to build everything from games to sites to apps. Choose from a range of
  courses that will appeal to...`;
 
-const category = 'Python';
 
 
 var [cards, setCards] = [];
 
+var [fromIdToCategory, setFromIdToCategory] = [];
+
+var [category, setCategory] = [];
+
 function App() {
   [cards, setCards] = useState(initialCards);
+  [fromIdToCategory, setFromIdToCategory] = useState(null);
+  [category, setCategory] = useState("python");
+
+  useEffect(() => {
+    fetch(`http://localhost:4000/courses`)
+      .then((response) => response.json())
+      .then((data) => {
+        setCards(data);
+      });
+
+    fetch(`http://localhost:4000/id-to-category`)
+      .then((response) => response.json())
+      .then((data) => {
+        setFromIdToCategory(data);
+      });
+  }, []);
 
   return (
     <>
 
       <BrowserRouter>
-        <NavBar onFilter={(searchText) => handleFilter(searchText)}></NavBar>
+        <NavBar onFilter={(category) => handleFilter(category)}></NavBar>
         <Routes>
           <Route path={"/"} element={<Home cards={cards}
             coursesSectionTitle={coursesSectionTitle}
             coursesSectionDescription={coursesSectionDescription}
             category={category}></Home>} />
-          <Route path="/course/:id" element={<><CoursePage courses={courses}></CoursePage><div style={{ height: 1500 }}></div></>} />
+          <Route path="/course/:id" element={<><CoursePage courses={cards} categories={fromIdToCategory}></CoursePage><div style={{ height: 1500 }}></div></>} />
           <Route path='*' element={<PageNotFound></PageNotFound>}></Route>
         </Routes>
       </BrowserRouter>

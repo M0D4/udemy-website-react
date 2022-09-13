@@ -3,16 +3,29 @@ import './CoursePage.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faThumbsUp, faThumbsDown, faGlobe, faClosedCaptioning, faCheck, faMedal, faUserGroup, faCirclePlay } from '@fortawesome/free-solid-svg-icons'
 import { Link, useParams } from 'react-router-dom';
-
+import PageNotFound from './PageNotFound';
+import Accordion from 'react-bootstrap/Accordion';
 
 var courses;
 
 var [course, setCourse] = [];
 
 function CoursePage(props) {
+
+
     courses = props.courses;
     const courseId = useParams()["id"];
-    [course, setCourse] = useState(courses[courseId]);
+
+    if (!props.categories) return <></>;
+
+    const category = props.categories[courseId];
+
+    if (!category) return <PageNotFound></PageNotFound>
+
+    console.log(courses[category]["courses"][courseId]);
+    [course, setCourse] = useState(courses[category]["courses"][courseId]);
+
+
     return (
         <>
             <div className='slider-menu text-white'>
@@ -99,7 +112,16 @@ function CoursePage(props) {
                             <p className='course-length-details'>{course["length"]}</p>
                             <button href='#' className='expand-sections'><span className='font-weight-bold'>Expand all sections</span></button>
                         </div>
-
+                        <Accordion className='mt-4 accordion' defaultActiveKey="0" alwaysOpen>
+                            {course["content"].map((content, idx) =>
+                                <Accordion.Item className='accordion-item' key={idx} eventKey={idx}>
+                                    <div style={{ width: "700" }}><Accordion.Header style={{ width: "100%", fontSize: 25, marginBottom: 0, border: "1px 1px 0 1px solid #d1d7dc", }} className='accordion-header'><div className='ml-2 font-weight-bold' style={{ width: "700px", textAlign: "left" }}>{"Chapter " + (idx + 1)}</div></Accordion.Header></div>
+                                    <Accordion.Body className='ml-3' style={{ color: "#1c1d1f", backgroundColor: "#f7f9fa" }}>
+                                        {content}
+                                    </Accordion.Body>
+                                </Accordion.Item>
+                            )}
+                        </Accordion>
                     </div>
                     <div className='requirements mt-5'>
                         <h2 className='course-content-section-title font-weight-bold'>Requirements</h2>

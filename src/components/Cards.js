@@ -3,11 +3,11 @@ import Card from './Card';
 import './Cards.css'
 
 function Cards(props) {
-    const cards = props.cards;
+    const courses = props.courses;
     return (
         <>
             <div className='cards'>
-                {cards.map((card) => <Card key={card.id} course={card.course}></Card>)}
+                {courses.map((course, idx) => <Card key={course["id"]} course={course}></Card>)}
             </div>
         </>
     );

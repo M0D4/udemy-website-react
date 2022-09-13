@@ -4,7 +4,7 @@ import './CoursesSection.css'
 
 
 function CoursesSection(props) {
-    const { cards, title, description, category } = props;
+    const { courses, title, description, category } = props;
     return (
         <>
             <div className='pre-courses-section'>
@@ -32,7 +32,7 @@ function CoursesSection(props) {
                     <button className="btn btn-md btn-explore font-weight-bold p-2">Explore {category}</button>
                 </div>
                 <div className='m-2'>
-                    <Cards cards={cards}></Cards>
+                    <Cards courses={courses}></Cards>
                 </div>
             </main>
         </>

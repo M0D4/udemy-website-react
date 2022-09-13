@@ -385,3 +385,11 @@
 .sidebar-content-group {
     border-bottom: 1px solid #d1d7dc;
 }
+
+.accordion {
+    width: 100%;
+}
+
+.accordion-header {
+    width: 100% !important;
+}

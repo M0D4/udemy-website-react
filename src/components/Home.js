@@ -9,13 +9,17 @@ function Home(props) {
     const { cards, coursesSectionTitle, coursesSectionDescription, category } = props;
     const s = useParams()["s"];
 
-    var newCards = cards.filter((card) => s === undefined ||
-        card["course"]["title"].toLowerCase().indexOf(s.trim().toLowerCase()) !== -1);
+    var courses = cards[category.toLowerCase()]["courses"];
+    if (!courses) return <div>Please wait</div>
+
+    var newCourses = Object.values(courses).filter((course) => (s === undefined ||
+        course["title"].toLowerCase().indexOf(s.trim().toLowerCase()) !== -1));
+
     return (
         <>
             <FirstSection></FirstSection>
-            <div className='abc'>
-                <CoursesSection cards={newCards}
+            <div>
+                <CoursesSection courses={newCourses}
                     title={coursesSectionTitle}
                     description={coursesSectionDescription}
                     category={category}></CoursesSection>

@@ -4,7 +4,7 @@ import './Card.css'
 
 function Card(props) {
     const course = props.course;
-
+    // if (!course["rating"]) return <div>Please Wait</div>;
     return (
         <>
             <span className='card course-card mr-2 mb-2'>
