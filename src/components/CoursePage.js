@@ -282,7 +282,18 @@ function CoursePage(props) {
                         }
                     </div>
                 </div>
-                <div style={{ height: 500 }}></div>
+                <footer className='course-page-footer'>
+                    <div className='course-page-footer-text font-weight-bold'>
+                        Top companies choose <Link className='light-color-primary course-footer-udemy-business' to={"/business"}>Udemy Business</Link> to build in-demand career skills.
+                    </div>
+                    <div className='course-page-footer-partners'>
+                        <img className='mr-4 mt-2 mb-2' alt="Nasdaq" height="44" width="115" src="https://s.udemycdn.com/partner-logos/v4/nasdaq-light.svg" />
+                        <img className='mr-4 mt-2 mb-2' alt="Volkswagen" height="44" width="44" src="https://s.udemycdn.com/partner-logos/v4/volkswagen-light.svg" />
+                        <img className='mr-4 mt-2 mb-2' alt="Box" height="44" width="67" src="https://s.udemycdn.com/partner-logos/v4/box-light.svg"></img>
+                        <img className='mr-4 mt-2 mb-2' alt="NetApp" height="44" width="115" src="https://s.udemycdn.com/partner-logos/v4/netapp-light.svg" />
+                        <img className='mt-2 mb-2' alt="Eventbrite" height="44" width="115" src="https://s.udemycdn.com/partner-logos/v4/eventbrite-light.svg"></img>
+                    </div>
+                </footer>
             </StickyContainer>
         </>
     );

@@ -6,6 +6,7 @@ import NavBar from './components/NavBar';
 import CoursePage from './components/CoursePage';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import PageNotFound from './components/PageNotFound';
+import Footer from './components/Footer';
 
 
 const course = {
@@ -201,9 +202,10 @@ function App() {
             coursesSectionTitle={coursesSectionTitle}
             coursesSectionDescription={coursesSectionDescription}
             category={category}></Home>} />
-          <Route path="/course/:id" element={<><CoursePage courses={cards} categories={fromIdToCategory}></CoursePage><div style={{ height: 1500 }}></div></>} />
+          <Route path="/course/:id" element={<><CoursePage courses={cards} categories={fromIdToCategory}></CoursePage></>} />
           <Route path='*' element={<PageNotFound></PageNotFound>}></Route>
         </Routes>
+        <Footer></Footer>
       </BrowserRouter>
     </>
   );

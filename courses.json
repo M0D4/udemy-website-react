@@ -118,6 +118,11 @@
                         "Have a computer (either Mac, Windows, or Linux)",
                         "Desire to learn!"
                     ],
+                    "content": [
+                        "Chapter 1",
+                        "Chapter 2",
+                        "Chapter 3"
+                    ],
                     "reviews": [
                         {
                             "name": "Bryan P.",

@@ -481,3 +481,28 @@
 .accordion-header {
     width: 100% !important;
 }
+
+.course-page-footer {
+    display: flex;
+    padding: 12px 0;
+    padding-left: 48px;
+    padding-right: 48px;
+    background: #1c1d1f;
+    border-top: 1px solid #3e4143;
+    color: #fff;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.course-page-footer-text {
+    min-width: 400px;
+    flex: 1;
+    padding: 12px 24px 12px 0;
+    font-size: 19px;
+}
+
+.course-footer-udemy-business:hover {
+    color: #cec0fc;
+}
